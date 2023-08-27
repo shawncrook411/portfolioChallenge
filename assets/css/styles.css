@@ -1,5 +1,5 @@
 :root {
-   --primary-color: #201b1bda;
+   --primary-color: #201b1b;
    --secondary-color: #2dadc4;
    --primary-font: monospace;
 
@@ -21,15 +21,24 @@ header{
 }
 
 #photo-logo {
-    height: 50px;
-    width: 50px;
-    border: 3px solid red;
+    height: 60px;
+    width: 60px;
     margin: 25px;
     position: absolute;
     left: 15px;
+    border-radius: 15px;
+    
 }
 
-body div {
+h1{
+   position:absolute; 
+   left: 100px;
+   top: 50px;
+   font-size: 40px;
+   margin: 0px 10px 0px 0px;
+}
+
+main {
     display:flex;
 }
 
@@ -45,22 +54,86 @@ li {
 aside{
     border: 5px solid red;
     display:flex;
-    padding:25px;
+    width:100px;
     height:90vh;
 }
 #main-section {
     border: 5px solid red;
     display:flex;
-    padding:75px;
+    padding:15px;
     width:100vw;
+    flex-wrap: wrap;
 }
 
+card{
+    border-style: solid;
+    border-color: var(--secondary-color);
+    width: 320px;
+    height: 300px;
+    margin: 25px;
+    z-index: 1;
+    flex: 1 0 500px; 
+       
+}
+
+.card-header{
+    border-style: solid;    
+    top: -50%;
+    position: relative;
+    top: -30px;
+    margin: 10px 10px;
+    z-index: 2;
+    height: 30px;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.card-section{
+    border:5px solid red;
+    position: absolute;
+    top: 40px;
+    left:-5px;
+    height: 260px;
+    width: 100%;
+}
+
+h2{
+    margin: 5px 0px 5px 15px;
+}
+
+footer {
+    border: 5px solid red;
+    height: 75px;
+}
+
+a{
+    
+}
+
+img{
+    height:100%;
+    width:100%;
+}
+
+#contact-info{
+    font-size:150%;
+    font-weight: bold;
+}
+
+/*
 @media screen and (max-width: 900px) {
-header{
+nav{
     flex-direction:column;
-    align-items: flex-start;
+    justify-content: flex-start; 
 }
-li {
-    display: block;
+li{
+    display:block;
+}
+header{
+    justify-content:flex-start;
+}
+main{
+    
 }
 }
+*/
