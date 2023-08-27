@@ -54,8 +54,8 @@ li {
 aside{
     border: 5px solid red;
     display:flex;
-    width:100px;
-    height:90vh;
+    width:200px;
+    height:100;
 }
 #main-section {
     border: 5px solid red;
@@ -63,16 +63,19 @@ aside{
     padding:15px;
     width:100vw;
     flex-wrap: wrap;
+    
+    min-height: 750px;
+    
 }
 
 card{
     border-style: solid;
     border-color: var(--secondary-color);
     width: 320px;
-    height: 300px;
+    height: auto;
     margin: 25px;
     z-index: 1;
-    flex: 1 0 500px; 
+    flex: 1 1 300px; 
        
 }
 
@@ -89,12 +92,24 @@ card{
 }
 
 .card-section{
-    border:5px solid red;
-    position: absolute;
-    top: 40px;
-    left:-5px;
-    height: 260px;
-    width: 100%;
+  
+    
+    height: auto;
+    width: 100%;     
+    
+     
+    position: relative;
+    top: -30px;   
+    
+    
+}
+.card-section div{
+  
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
+   
+      
 }
 
 h2{
@@ -106,13 +121,18 @@ footer {
     height: 75px;
 }
 
-a{
-    
+a {
+    text-decoration: none;
+}
+p {
+   margin: 15px 0 0 10px;
 }
 
 img{
-    height:100%;
-    width:100%;
+    height:auto;
+    width:75%;
+    max-width: 500px;
+    margin: auto;
 }
 
 #contact-info{
@@ -120,6 +140,13 @@ img{
     font-weight: bold;
 }
 
+#horiseon-card{
+    flex: 2 2 700px;
+}
+
+#about-me-card{
+
+}
 /*
 @media screen and (max-width: 900px) {
 nav{
