@@ -6,7 +6,7 @@
 
    --primary-font: monospace;
    --test-border: 0px;
-
+    scroll-behavior: smooth;
 }
 
 * {
@@ -22,6 +22,10 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     height: 100px;
+
+}
+
+button onclick{
 
 }
 
@@ -77,19 +81,29 @@ aside {
     width: 350px;
     margin-top: 40px;
     margin-bottom: 40px;
-    display:block;
-    
+    display:flex;
+    flex-direction: column;    
+    align-items: center;    
 }
 
 aside p{
    margin-bottom:50px;
+   margin: 15px;
+   display:block;
 }
+
 
 #avatar {
     height: auto;
     max-width: 300px;
     margin: 5px;
+    position:relative;
+    
      
+}
+
+main{
+    margin-top:20px;
 }
 
 #main-section {
@@ -111,6 +125,10 @@ card{
     z-index: 1;
     flex: 1 1 300px; 
        
+}
+
+card a p{
+    margin: 15px 0 0 10px;
 }
 
 .card-header{
@@ -138,6 +156,7 @@ card{
     
     
 }
+
 .card-section div{
   
     display: flex;
@@ -147,8 +166,22 @@ card{
       
 }
 
+#work-card {
+    font-size: 75%;
+}
+
+img{
+    border-radius: 10px;
+}
+
 h2{
     margin: 5px 0px 5px 15px;
+}
+
+#resume {
+    min-height: 75px;
+    margin:30px;
+
 }
 
 footer {
@@ -157,6 +190,8 @@ footer {
     border: var(--test-border) solid red; 
     height: 80px;
     border: 5px solid var(--tertiary-color);
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 #contact-info{
@@ -168,11 +203,21 @@ footer {
     
 }
 
+#resume-image{
+    height:auto;
+    max-width: 200px;
+}
+
 a {
     text-decoration: none;
 }
-p {
-   margin: 15px 0 0 10px;
+
+   
+.card-image{
+    height:auto;
+    width:75%;
+    max-width: 500px;
+    margin: auto;
 }
 
 #horiseon-image{
@@ -191,8 +236,12 @@ p {
 
 }
 
+#bottom-section{
+    display: flex;
+}
 
-@media screen and (max-width: 1019px) {
+
+@media screen and (max-width: 800px) {
 header{
     justify-content:flex-end;
     height: auto;
