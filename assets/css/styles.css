@@ -1,7 +1,11 @@
 :root {
    --primary-color: #201b1b;
    --secondary-color: #2dadc4;
+   --tertiary-color: #2fff28; 
+   --tertiary-color: white; 
+
    --primary-font: monospace;
+   --test-border: 0px;
 
 }
 
@@ -15,20 +19,33 @@
 header{
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 100px;
 
+}
+
+#name{
+    height:63px;
+    width: 285px;
+    border: 5px solid var(--tertiary-color);
+    margin-left:25px;
+    margin-top: 25px;
+    
 }
 
 #photo-logo {
     height: 60px;
     width: 60px;
-    margin: 25px;
+    
     position: absolute;
-    left: 15px;
+    left: 40px;
+    top: 40px;
     border-radius: 15px;
     
 }
+
+
 
 h1{
    position:absolute; 
@@ -40,37 +57,45 @@ h1{
 
 main {
     display:flex;
+    min-width:450px;
 }
 
 nav{
     display:flex;
     justify-content: flex-end;
-    margin: 25px;
+    margin-top:50px; 
+}
+
+ul{
+    margin:0px;
+    padding:0px;
 }
 li {
     display:inline;
-    margin: 25px;
+    margin-right: 25px;
 }
 aside{
-    border: 5px solid red;
+    border: var(--tertiary-color) solid 3px;
     display:flex;
     width:200px;
     height:100;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+
 #main-section {
-    border: 5px solid red;
+    border: var(--test-border) solid red;
     display:flex;
     padding:15px;
     width:100vw;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
     min-height: 750px;
     
 }
 
 card{
     border-style: solid;
-    border-color: var(--secondary-color);
+    border-color: var(--tertiary-color);
     width: 320px;
     height: auto;
     margin: 25px;
@@ -81,6 +106,7 @@ card{
 
 .card-header{
     border-style: solid;    
+    border-color: var(--tertiary-color);
     top: -50%;
     position: relative;
     top: -30px;
@@ -117,8 +143,18 @@ h2{
 }
 
 footer {
-    border: 5px solid red;
+    display: flex;
+    align-items:center;
+    border: var(--test-border) solid red; 
     height: 75px;
+    border: 5px solid var(--tertiary-color);
+}
+
+#contact-info{
+    font-size:150%;
+    font-weight: bold;
+    margin-top:10px;
+    margin-left:5px;
 }
 
 a {
@@ -135,10 +171,6 @@ img{
     margin: auto;
 }
 
-#contact-info{
-    font-size:150%;
-    font-weight: bold;
-}
 
 #horiseon-card{
     flex: 2 2 700px;
@@ -147,20 +179,36 @@ img{
 #about-me-card{
 
 }
-/*
-@media screen and (max-width: 900px) {
-nav{
+
+
+@media screen and (max-width: 945px) {
+header{
+    justify-content:flex-end;
+    height: auto;
     flex-direction:column;
-    justify-content: flex-start; 
+
+}
+nav{
+    flex-direction: column;
+    align-items:center;
+    margin-top: 25px;
+    margin-left: 100px;
 }
 li{
-    display:block;
-}
-header{
-    justify-content:flex-start;
-}
-main{
+    margin-bottom:10px;
     
 }
+aside{
+    display:none;
 }
-*/
+
+@media screen and (max-width: 515px){
+    html{
+        width: 515px;
+        overflow: auto;
+    }
+  }
+  
+  }
+
+
