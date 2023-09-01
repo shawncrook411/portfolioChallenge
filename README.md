@@ -25,6 +25,19 @@ The actual repo can be found here :
 
 https://github.com/shawncrook411/portfolioChallenge
 
+## Screenshots
+Here's a screenshot of the top half of the screen
+
+<img src="./assets/images/ss1.png" alt="screenshot of the top half of the screen" width="1000" height="100%"/>
+
+Here's a screenshot of the bottom half of the screen
+
+<img src="./assets/images/ss2.png" alt="screenshot of the bottom half of the screen" width="1000" height="100%"/>
+
+Laslty, here's a screenshot of the screen while it the window size has decreased
+
+<img src="./assets/images/ss3.png" alt="screenshot of the top half of the screen while the width has been shrunk" />
+
 ## Contributions
 I used a CSS reset file thanks to "Eric"
 CSS Reset File thanks to
