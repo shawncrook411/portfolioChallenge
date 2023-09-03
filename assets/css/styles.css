@@ -1,7 +1,6 @@
 :root {
    --primary-color: #201b1b;
    --secondary-color: #2dadc4;
-   --tertiary-color: #2fff28; 
    --tertiary-color: white; 
 
    --primary-font: monospace;
@@ -25,10 +24,6 @@ header{
 
 }
 
-button onclick{
-
-}
-
 #name{
     height:63px;
     width: 285px;
@@ -45,11 +40,8 @@ button onclick{
     position: absolute;
     left: 40px;
     top: 40px;
-    border-radius: 15px;
-    
+    border-radius: 15px;    
 }
-
-
 
 h1{
    position:absolute; 
@@ -92,14 +84,11 @@ aside p{
    display:block;
 }
 
-
 #avatar {
     height: auto;
     max-width: 300px;
     margin: 5px;
-    position:relative;
-    
-     
+    position:relative;       
 }
 
 main{
@@ -116,18 +105,17 @@ main{
     
 }
 
-card{
+.card{
     border-style: solid;
     border-color: var(--tertiary-color);
     width: 320px;
     height: auto;
     margin: 25px;
     z-index: 1;
-    flex: 1 1 300px; 
-       
+    flex: 1 1 300px;        
 }
 
-card a p{
+.card a p{
     margin: 15px 0 0 10px;
 }
 
@@ -144,26 +132,17 @@ card a p{
     border-radius: 6px;
 }
 
-.card-section{
-  
-    
+.card-section{    
     height: auto;
     width: 100%;     
-    
-     
     position: relative;
     top: -30px;   
-    
-    
 }
 
-.card-section div{
-  
+.card-section div{  
     display: flex;
     justify-content: center;
-    padding: 10px 0 0 0;
-   
-      
+    padding: 10px 0 0 0;      
 }
 
 #work-card {
@@ -181,7 +160,6 @@ h2{
 #resume {
     min-height: 75px;
     margin:30px;
-
 }
 
 footer {
@@ -196,11 +174,9 @@ footer {
 
 #contact-info{
     font-size:150%;
-    font-weight: bold;
-   
+    font-weight: bold;   
     margin-left:5px;
-    margin-right:5px;
-    
+    margin-right:5px;    
 }
 
 #resume-image{
@@ -227,7 +203,6 @@ a {
     margin: auto;
 }
 
-
 #horiseon-card{
     flex: 2 2 700px;
 }
@@ -240,40 +215,40 @@ a {
     display: flex;
 }
 
-
 @media screen and (max-width: 800px) {
-header{
-    justify-content:flex-end;
-    height: auto;
-    flex-direction:column;
+    header{
+        justify-content:flex-end;
+        height: auto;
+        flex-direction:column;
 
-}
-nav{
-    flex-direction: column;
-    align-items:center;
-    margin-top: 25px;
-    margin-left: 100px;
-}
-button{
-    margin-bottom:10px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items:center;
+        margin-top: 25px;
+        margin-left: 100px;
+    }
+
+    button{
+        margin-bottom:10px;
     
-}
-main{
-    display:block;
-}
-aside{
-    width: auto;
-    
-    
-}
+    }
+
+    main{
+        display:block;
+    }
+
+    aside{
+        width: auto;    
+    }
 
 @media screen and (max-width: 515px){
     html{
         width: 515px;
         overflow: auto;
     }
-  }
-  
-  }
+  }  
+}
 
 
